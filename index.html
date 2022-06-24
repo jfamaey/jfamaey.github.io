@@ -1,119 +1,420 @@
-<!DOCTYPE HTML>
-<!--
-	Miniport by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Jeroen Famaey</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" href="images/photo.jpg">
-		<script type="text/javascript" src="assets/js/bibtex_js.js"></script>
-	</head>
-	<body class="is-preload">
+<head>
+<title>Jeroen Famaey</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="icon" href="assets/images/photo.jpg">
+</head>
 
-		<!-- Nav -->
-			<nav id="nav">
-				<ul class="container">
-					<li><a href="index.html">About</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="publications.html">Publications</a></li>
-				</ul>
-			</nav>
 
-			<bibtex src="bibtex_v20220502.bib"></bibtex>
 
-		<!-- Home -->
-			<article id="top" class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit">
-								<img src="images/photo.jpg" alt="" />
-							</span>
-						</div>
-						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<h1><strong>Jeroen Famaey</strong></h1>
-							</header>
-							<p>
-								I am a research professor at the <a href="https://www.uantwerpen.be/en/" target="_blank">University of Antwerp</a>
-								and <a href="https://www.imec-int.com/en" target="_blank">IMEC</a>, and a member of the
-								<a href="https://idlab.uantwerpen.be" target="_blank">IDLab research group</a>.
-								I model, design, and optimize future wireless networks and connected applications. I am
-								particularly interested in zero-energy computing and communications to enable a more sustainable Internet of Things,
-								as well as challenging connected applications enabled by future wireless networks,
-								such as networked extended reality, collaborative robot swarms, and distributed edge AI.
-							</p>
+<body>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="index.html" class="w3-bar-item w3-button w3-hover-teal">JEROEN <b>FAMAEY</b></a>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right">
+        <a href="team.html" class="w3-bar-item w3-button w3-hide-medium w3-hide-small w3-hover-teal">TEAM</a>
+        <a href="publications.html" class="w3-bar-item w3-button w3-hide-medium w3-hide-small w3-hover-teal">PUBLICATIONS</a>
+        <a href="projects.html" class="w3-bar-item w3-button w3-hide-medium w3-hide-small w3-hover-teal">PROJECTS</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-teal" onclick="myFunction()">&#9776;</a>
+      </div>
+    </div>
+    <div id="dropdown-menu" class="w3-right w3-bar-block w3-white w3-padding w3-card w3-hide w3-hide-large">
+      <a href="team.html" class="w3-bar-item w3-button w3-hover-teal">TEAM</a>
+      <a href="publications.html" class="w3-bar-item w3-button w3-hover-teal">PUBLICATIONS</a>
+      <a href="projects.html" class="w3-bar-item w3-button w3-hover-teal">PROJECTS</a>
+    </div>
+  </div>
 
-							<ul class="social">
-								<li><a href="mailto:jeroen.famaey@uantwerpen.be" class="fas fa-envelope big-icon"></a></li>
-								<li><a href="https://scholar.google.be/citations?user=mpIxFGoAAAAJ&hl=en&oi=ao" target="_blank" class="ai ai-google-scholar big-icon"></a></li>
-								<li><a href="https://www.researchgate.net/profile/Jeroen_Famaey" target="_blank" class="ai ai-researchgate big-icon"></a></li>
-								<li><a href="https://www.youtube.com/channel/UC0w--5ndk-hcqm0NmZ5rMPg" target="_blank" class="fab fa-youtube big-icon"></a></li>
-							</ul>
-							<!--<a href="#work" class="button large scrolly">Learn about what I do</a>-->
-						</div>
-					</div>
-				</div>
-			</article>
+  <header class="w3-content w3-padding" style="max-width:1000px;" id="bio">
+    <div style="margin-bottom: 2cm;"></div>
+    <h1 class="w3-border-bottom w3-border-teal">About Me</h1>
+    <div class="w3-row-padding">
+      <div class="w3-third w3-padding">
+        <img src="assets/images/photo.jpg" class="w3-circle" alt="Jeroen Famaey" style="width:100%">
+      </div>
+      <div class="w3-twothird w3-padding w3-mobile">
+        <p>
+          I am an <b class="w3-text-teal">associate research professor</b> at the
+          <a href="https://www.uantwerpen.be/en/" target="_blank" class="w3-hover-text-teal">University of Antwerp</a>,
+    			Belgium, and <a href="https://www.imec-int.com/en" target="_blank" class="w3-hover-text-teal">IMEC</a>, Belgium, and a member of the
+    			<a href="https://idlab.uantwerpen.be" target="_blank" class="w3-hover-text-teal">IDLab research group</a>, where I lead the Connected Systems team.
+          I received my M.Sc. in Computer Science from <a href="https://www.ugent.be" target="_blank" class="w3-hover-text-teal">Ghent University</a>, Belgium,
+          in 2007. Subsequently, I obtained my PhD in Computer Science Engineering at the same university in 2012.
+          During my PhD studies, I performed research on computer networks, specifically focusing on multimedia networks and video
+          streaming protocols.
+        </p>
+  			<p>
+          <div>
+            Currently, my <b class="w3-text-teal">research interests</b> are in future wireless networks and connected applications. I am
+      			particularly interested in zero-energy computing and communications to enable a more sustainable Internet of Things,
+      			as well as challenging connected applications enabled by future wireless network technologies,
+      			such as networked extended reality, collaborative robot swarms, and distributed edge computing.
+          </div>
+          <div class="w3-margin-top"><span class="w3-text-teal w3-large fa fa-envelope"></span><a href="mailto:jeroen.famaey@uantwerpen.be" class="w3-margin-left w3-hover-text-teal">jeroen.famaey@uantwerpen.be</a></div>
+          <div class="w3-margin-top"><span class="w3-text-teal w3-xlarge ai ai-google-scholar"></span><a href="https://scholar.google.be/citations?user=mpIxFGoAAAAJ&hl=en&oi=ao" target="_blank" class="w3-margin-left w3-hover-text-teal">Google Scholar</a></div>
+          <div class="w3-margin-top"><span class="w3-text-teal w3-xlarge ai ai-researchgate"></span><a href="https://www.researchgate.net/profile/Jeroen_Famaey" target="_blank" class="w3-margin-left w3-hover-text-teal">ResearchGate</a></div>
+          <div class="w3-margin-top"><span class="w3-text-teal w3-xlarge fa fa-youtube"></span><a href="https://www.youtube.com/channel/UC0w--5ndk-hcqm0NmZ5rMPg" target="_blank" class="w3-margin-left w3-hover-text-teal">YouTube</a></div>
+        </p>
+      </div>
+    </div>
+  </header>
 
-		<!-- Projects -->
-			<article id="projects" class="wrapper style3">
-				<div class="container">
-					<header>
-						<h2>Selected Projects</h2>
-					</header>
-					<div class="row">
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/virtualreality.jpg" alt="" /></a>
-								<h3><a href="#">Networked VR</a></h3>
-								<p>Developing future wireless networks that can support the extreme requirements of interactive virtual reality.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/sustainable_iot.jpg" alt="" /></a>
-								<h3><a href="#">Sustainable IoT</a></h3>
-								<p>Creating a sustainble Internet of Things by replacing batteries with renewable energy sources.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/nanocomms.jpg" alt="" /></a>
-								<h3><a href="#">Nanoscale Systems</a></h3>
-								<p>Designing computing and networking solutions for swarms of tiny devices the size of a human cell.</p>
-							</article>
-						</div>
-					</div>
-					<footer>
-						<a href="#research" class="button large scrolly">Show all projects</a>
-					</footer>
-				</div>
-			</article>
+  <!-- Page content -->
+  <div class="w3-content w3-padding" style="max-width:1000px">
 
-		<!-- Contact -->
+    <div class="w3-container w3-padding-16" id="awards">
+      <h1 class="w3-border-bottom w3-border-teal">Awards</h1>
 
-			<article id="contact" class="wrapper style4">
-					<footer>
-						<ul id="copyright">
-							<li>&copy; <script>document.write(new Date().getFullYear())</script>, Jeroen Famaey, All rights reserved. Design: <a href="https://html5up.net/" target="_blank">HTML5 UP</a>.</li>
-						</ul>
-					</footer>
-				</div>
-			</article>
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b><a href="https://www.mdpi.com/1424-8220/20/2/488" target="_blank">Editor's Choice Article</a><span class="w3-right">2021</span></b></header>
+        <div class="w3-container w3-padding">Sensors<br/><i class="w3-text-grey">Sensors Survey on Wireless Technology Trade-Offs for the Industrial Internet of Things</i></div>
+      </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b>Research Stimulation Grant<span class="w3-right">2019-2023</span></b></header>
+        <div class="w3-container w3-padding">University of Antwerp Research Fund<br/><i class="w3-text-grey">4 year grant of 200 k€ to perform research on battery-less IoT devices</i></div>
+      </div>
 
-	</body>
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b><a href="https://doi.org/10.1109/CIOT.2018.8627134" target="_blank">Best Paper Award</a><span class="w3-right">2018</span></b></header>
+        <div class="w3-container w3-padding">Cloudification of the Internet of Things Conference (CIoT)<br/><i class="w3-text-grey">A Cloud-based Virtual Network Operator for Managing Multimodal LPWA Networks and Devices</i></div>
+      </div>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b><a href="https://doi.org/10.1145/3199902.3199906" target="_blank">Best Paper Award</a><span class="w3-right">2018</span></b></header>
+        <div class="w3-container w3-padding">ACM Workshop on ns-3 (WNS3)<br/><i class="w3-text-grey">Extension of the IEEE 802.11ah NS-3 Simulation Module</i></div>
+      </div>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b>Outstanding Reviewer Award<span class="w3-right">2015</span></b></header>
+        <div class="w3-container w3-padding">IEEE Communications Society<br/><i class="w3-text-grey">In recognition of outstanding contributions to IEEE TNSM journal</i></div>
+      </div>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b><a href="https://www.ibc.org/enhancing-mpeg-dash-performance-via-server-and-network-assistance/1027.article" target="_blank">Best of IET and IBC</a><span class="w3-right">2015</span></b></header>
+        <div class="w3-container w3-padding">International Broadcasting Convention (IBC)<br/><i class="w3-text-grey">Enhancing MPEG DASH performance via server and network assistance</i></div>
+      </div>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b><a href="https://doi.org/10.1007/978-3-642-38998-6_3" target="_blank">Best Paper Award</a><span class="w3-right">2013</span></b></header>
+        <div class="w3-container w3-padding">International Conference on Autonomous Infrastructure, Management and Security (AIMS)<br/><i class="w3-text-grey">Design and Evaluation of Tile Selection Algorithms for Tiled HTTP Adaptive Streaming</i></div>
+      </div>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b><a href="https://doi.org/10.1109/INM.2011.5990684" target="_blank">Best Student Paper Award</a><span class="w3-right">2011</span></b></header>
+        <div class="w3-container w3-padding">International Symposium on Integrated Network Management (IM)<br/>
+          <i class="w3-text-grey">Design and Evaluation of a Hierarchical Application Placement Algorithm in Large Scale Clouds</i></div>
+      </div>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b><a href="https://doi.org/10.1109/INM.2011.5990669" target="_blank">Student Travel Grant</a><span class="w3-right">2011</span></b></header>
+        <div class="w3-container w3-padding">International Symposium on Integrated Network Management (IM)<br/>
+          <i class="w3-text-grey">On the Merits of Popularity Prediction in Multimedia Content Caching</i></div>
+      </div>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b><a href="https://doi.org/10.1109/AICT.2008.46" target="_blank">Best Paper Award</a><span class="w3-right">2008</span></b></header>
+        <div class="w3-container w3-padding">Advanced International Conference on Telecommunications (AICT)<br/>
+          <i class="w3-text-grey">Towards Efficient Service Placement and Server Selection for Large-scale Deployments</i></div>
+      </div>
+
+    </div>
+
+
+    <div class="w3-container w3-padding-16" id="teaching">
+      <h1 class="w3-border-bottom w3-border-teal">Teaching</h1>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b>Computer Networks<span class="w3-right">2022-present</span></b></header>
+        <div class="w3-container w3-padding">University of Antwerp, Bachelor in Informatics</div>
+      </div>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b>Computer and Network Security<span class="w3-right">2021-present</span></b></header>
+        <div class="w3-container w3-padding">University of Antwerp, Bachelor in Informatics</div>
+      </div>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b>Computer and Network Security<span class="w3-right">2016-2021</span></b></header>
+        <div class="w3-container w3-padding">University of Antwerp, Master in Computer Science</div>
+      </div>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b>Introduction to Programming<span class="w3-right">2016-2021</span></b></header>
+        <div class="w3-container w3-padding">University of Antwerp, Bachelor in Mathematics</div>
+      </div>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b>Artificial Intelligence<span class="w3-right">2015</span></b></header>
+        <div class="w3-container w3-padding">University of Antwerp, Bachelor in Informatics</div>
+      </div>
+    </div>
+
+
+    <div class="w3-container w3-padding-16" id="service">
+      <h1 class="w3-border-bottom w3-border-teal">Service</h1>
+      <h3>Conference and Workshop Organisation</h3>
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b>Tutorial Co-Chair<span class="w3-right">2022</span></b></header>
+        <div class="w3-container w3-padding"><a href="https://nof2022.dnac.org/" target="_blank" class="w3-hover-text-teal">13th International Conference on Network of the Future (NoF)</a></div>
+      </div>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b>Workshop Co-Chair<span class="w3-right">2020-2021</span></b></header>
+        <div class="w3-container w3-padding"><a href="https://www.nanococoa.org/" target="_blank" class="w3-hover-text-teal">ACM International Workshop on Nanoscale Computing, Communication, and Applications (NaNoCoCoA)</a><br/>
+          <i class="w3-text-grey">Co-located with <a href="http://sensys.acm.org/2020/" target="_blank" class="w3-hover-text-teal">ACM SenSys 2020</a>
+            and <a href="http://sensys.acm.org/2021/" target="_blank" class="w3-hover-text-teal">ACM SenSys 2021</a></i></div>
+      </div>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b>Publicity Co-Chair<span class="w3-right">2019</span></b></header>
+        <div class="w3-container w3-padding"><a href="https://blackseacom2019.ieee-blackseacom.org/" target="_blank" class="w3-hover-text-teal">7th IEEE International Black Sea Conference on Communications and Networking (BlackSeaCom)</a></div>
+      </div>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b>Workshop Co-Chair<span class="w3-right">2019</span></b></header>
+        <div class="w3-container w3-padding"><a href="https://infocom2019.ieee-infocom.org/workshop-ultra-high-broadband-terahertz-communication-5g-and-beyond-networks" target="_blank" class="w3-hover-text-teal">1st IEEE Workshop on Ultra-high Broadband Terahertz Communication for 5G and Beyond networks (UBTCN)</a><br/>
+          <i class="w3-text-grey">Co-located with <a href="https://infocom2019.ieee-infocom.org/" target="_blank" class="w3-hover-text-teal">IEEE INFOCOM 2019</a></i></div>
+      </div>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b>Workshop Co-Chair<span class="w3-right">2017</span></b></header>
+        <div class="w3-container w3-padding"><a href="http://www.cnsm-conf.org/2017/sdnnfv2017.html" target="_blank" class="w3-hover-text-teal">4th International Workshop on Management of SDN and NFV Systems (ManSDN/NFV)</a><br/>
+          <i class="w3-text-grey">Co-located with <a href="http://www.cnsm-conf.org/2017/" target="_blank" class="w3-hover-text-teal">CNSM 2017</a></i></div>
+      </div>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b>Labs and Tutorials Co-Chair<span class="w3-right">2014</span></b></header>
+        <div class="w3-container w3-padding"><a href="http://www.aims-conference.org/2014/" target="_blank" class="w3-hover-text-teal">8th International Conference on Autonomous Infrastructure, Management and Security (AIMS)</a></div>
+      </div>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b>Online Presence Chair<span class="w3-right">2011</span></b></header>
+        <div class="w3-container w3-padding"><a href="http://www.aims-conference.org/2014/" target="_blank" class="w3-hover-text-teal">13th IFIP/IEEE International Symposium on Integrated Network Management (IM)</a></div>
+      </div>
+
+      <h3>Editorial Boards</h3>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b>Guest Editor<span class="w3-right">2022</span></b></header>
+        <div class="w3-container w3-padding"><a href="https://tnano.org/" target="_blank" class="w3-hover-text-teal">IEEE Transactions on Nanotechnology (TNANO)</a><br/>
+          <i class="w3-text-grey">Special section on <a href="https://tnano.org/2021/10/special-section-on-nanoscale-computing-communication-and-applications-nanococoa-2021/" target="_blank" class="w3-hover-text-teal">Nanoscale Computing, Communication, and Applications</a></i></div>
+      </div>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b>Associate Editor<span class="w3-right">2020-present</span></b></header>
+        <div class="w3-container w3-padding"><a href="https://www.frontiersin.org/journals/communications-and-networks" target="_blank" class="w3-hover-text-teal">Frontiers in Communications and Networks</a><br/>
+          <i class="w3-text-grey">Section on <a href="https://www.frontiersin.org/journals/communications-and-networks/sections/non-conventional-communications-and-networks" target="_blank" class="w3-hover-text-teal">Non-Conventional Communications and Networks</a></i></div>
+      </div>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b>Guest Editor<span class="w3-right">2020</span></b></header>
+        <div class="w3-container w3-padding"><a href="https://www.mdpi.com/journal/sensors" target="_blank" class="w3-hover-text-teal">Sensors</a><br/>
+          <i class="w3-text-grey">Special Issue on <a href="https://www.mdpi.com/journal/sensors/special_issues/bfitn" target="_blank" class="w3-hover-text-teal">Battery-Free IoT Devices and Networks</a></i></div>
+      </div>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b>Section Editor<span class="w3-right">2019-present</span></b></header>
+        <div class="w3-container w3-padding"><a href="https://www.mdpi.com/journal/sensors" target="_blank" class="w3-hover-text-teal">Sensors</a><br/>
+          <i class="w3-text-grey">Section on <a href="https://www.mdpi.com/journal/sensors/sections/sensornetworks" target="_blank" class="w3-hover-text-teal">Sensor Networks</a></i></div>
+      </div>
+
+      <h3>Technical Programme Committees</h3>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b>Current TPCs</b></header>
+        <ul class="w3-ul">
+          <li><a href="https://nof2022.dnac.org/" target="_blank" class="w3-hover-text-teal">International Conference on Network of the Future (NoF)</a><span class="w3-right">Since 2022</span></li>
+          <li><a href="https://ieee-globecom.org/" target="_blank" class="w3-hover-text-teal">IEEE Global Communications Conference (GLOBECOM)</a><span class="w3-right">Since 2020</span></li>
+          <li><a href="http://www.cnsm-conf.org/" target="_blank" class="w3-hover-text-teal">International Conference on Network and Service Management (CNSM)</a><span class="w3-right">Since 2019</span></li>
+          <li><a href="https://ieee-noms.org/" target="_blank" class="w3-hover-text-teal">IEEE/IFIP Network Operations and Management Symposium (NOMS)</a><span class="w3-right">Since 2016</span></li>
+          <li><a href="https://www.ieee-im.org/" target="_blank" class="w3-hover-text-teal">IFIP/IEEE International Symposium on Integrated Network Management (IM)</a><span class="w3-right">Since 2015</span></li>
+        </ul>
+      </div>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b>Past TPCs</b></header>
+        <ul class="w3-ul">
+          <li><a href="http://www.ieeevtc.org/vtc2019fall" target="_blank" class="w3-hover-text-teal">IEEE Vehicular Technology Conference (VTC-Fall)</a><span class="w3-right">2019</span></li>
+          <li><a href="http://medhocnet18.cnit.it/" target="_blank" class="w3-hover-text-teal">Annual Mediterranean Ad Hoc Networking Workshop (Med-Hoc-Net)</a><span class="w3-right">2018</span></li>
+          <li><a href="http://www.apnoms.org/" target="_blank" class="w3-hover-text-teal">Asia-Pacific Network Operations and Management Symposium (APNOMS)</a><span class="w3-right">2015-2017</span></li>
+          <li><a href="https://im2015.ieee-im.org/content/workshops-2.html" target="_blank" class="w3-hover-text-teal">Workshop on Cognitive Network & Service Management (CogMan)</a><span class="w3-right">2015</span></li>
+          <li><a href="https://giis-2019.dnac.org/" target="_blank" class="w3-hover-text-teal">Global Information Infrastructure Symposium (GIIS)</a><span class="w3-right">2014-2019</span></li>
+          <li><a href="http://www.cnsm-conf.org/2016/sdnnfv2016.html" target="_blank" class="w3-hover-text-teal">International Workshop on Management of SDN and NFV Systems (ManSDN/NFV)</a><span class="w3-right">2014-2016</span></li>
+          <li><a href="http://www.aims-conference.org/2015/" target="_blank" class="w3-hover-text-teal">International Conference on Autonomous Infrastructure, Management and Security (AIMS)</a><span class="w3-right">2014-2015</span></li>
+          <li><a href="https://www.ieice.org/~icm/ManFI2016/" target="_blank" class="w3-hover-text-teal">IEEE/IFIP International Workshop on Management of the Future Internet (ManFI)</a><span class="w3-right">2013-2016</span></li>
+          <li><a href="https://im2015.ieee-im.org/content/workshops-2.html" target="_blank" class="w3-hover-text-teal">International Workshop on Quality of Experience Centric Management (QCMan)</a><span class="w3-right">2013-2015</span></li>
+        </ul>
+      </div>
+
+      <h3>Reviewer</h3>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b>Journals</b></header>
+        <ul class="w3-ul">
+          <li><a href="https://ieee-iotj.org/" target="_blank" class="w3-hover-text-teal">IEEE Internet of Things Journal</a></li>
+          <li><a href="https://www.comsoc.org/publications/magazines/ieee-wireless-communications" target="_blank" class="w3-hover-text-teal">IEEE Wireless Communications Magazine</a></li>
+          <li><a href="https://www.comsoc.org/publications/magazines/ieee-communications-magazine" target="_blank" class="w3-hover-text-teal">IEEE Communications Magazine</a></li>
+          <li><a href="https://www.comsoc.org/publications/journals/ieee-tnsm" target="_blank" class="w3-hover-text-teal">IEEE Transactions of Network and Service Management</a></li>
+          <li><a href="https://tnano.org/" target="_blank" class="w3-hover-text-teal">IEEE Transactions on Nanotechnology</a></li>
+          <li><a href="http://www.ieee-acm-ton.org/" target="_blank" class="w3-hover-text-teal">IEEE/ACM Transactions on Networking</a></li>
+          <li><a href="https://www.comsoc.org/publications/journals/ieee-comml" target="_blank" class="w3-hover-text-teal">IEEE Communications Letters</a></li>
+          <li><a href="https://www.computer.org/csdl/journal/tm" target="_blank" class="w3-hover-text-teal">IEEE Transactions on Mobile Computing</a></li>
+          <li><a href="https://signalprocessingsociety.org/publications-resources/ieee-transactions-multimedia" target="_blank" class="w3-hover-text-teal">IEEE Transactions on Multimedia</a></li>
+          <li><a href="https://www.comsoc.org/publications/magazines/ieee-network" target="_blank" class="w3-hover-text-teal">IEEE Network</a></li>
+          <li><a href="https://ieeeaccess.ieee.org/" target="_blank" class="w3-hover-text-teal">IEEE Access</a></li>
+          <li><a href="https://dl.acm.org/journal/tomm" target="_blank" class="w3-hover-text-teal">ACM Transactions on Multimedia Computing Communications and Applications</a></li>
+          <li><a href="https://www.springer.com/journal/11276" target="_blank" class="w3-hover-text-teal">Wireless Networks</a></li>
+          <li><a href="https://www.journals.elsevier.com/computer-communications" target="_blank" class="w3-hover-text-teal">Computer Communications</a></li>
+          <li><a href="https://www.journals.elsevier.com/computer-networks" target="_blank" class="w3-hover-text-teal">Computer Networks</a></li>
+          <li><a href="https://www.journals.elsevier.com/journal-of-network-and-computer-applications" target="_blank" class="w3-hover-text-teal">Journal of Network and Computer Applications</a></li>
+          <li><a href="https://www.mdpi.com/journal/sensors" target="_blank" class="w3-hover-text-teal">Sensors</a></li>
+          <li><a href="https://www.journals.elsevier.com/computer-standards-and-interfaces" target="_blank" class="w3-hover-text-teal">Computer Standards & Interfaces</a></li>
+          <li><a href="https://www.sciencedirect.com/journal/signal-processing-image-communication" target="_blank" class="w3-hover-text-teal">Signal Processing: Image Communication</a></li>
+          <li><a href="https://onlinelibrary.wiley.com/journal/10991190" target="_blank" class="w3-hover-text-teal">International Journal of Network Management</a></li>
+          <li><a href="https://www.journals.elsevier.com/nano-communication-networks" target="_blank" class="w3-hover-text-teal">Nano Communication Networks</a></li>
+          <li><a href="https://www.journals.elsevier.com/sustainable-energy-technologies-and-assessments" target="_blank" class="w3-hover-text-teal">Sustainable Energy Technologies and Assessments</a></li>
+          <li><a href="https://onlinelibrary.wiley.com/journal/24761508" target="_blank" class="w3-hover-text-teal">Internet Technology Letters</a></li>
+          <li>...</li>
+        </ul>
+      </div>
+
+      <h3>Doctoral Evaluation Committees</h3>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b>Ritesh Kumar Singh<span class="w3-right">2022</span></b></header>
+        <div class="w3-container w3-padding">University of Antwerp, Belgium - Chair<br/>
+          <i class="w3-text-grey">Building Energy Efficient IoT Applications using Low Power Wide Area Networks
+          </i>
+        </div>
+      </div>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b>Michiel Aernouts<span class="w3-right">2022</span></b></header>
+        <div class="w3-container w3-padding">University of Antwerp, Belgium - Chair<br/>
+          <i class="w3-text-grey"><a href="https://hdl.handle.net/10067/1856170151162165141" target="_blank" class="w3-hover-text-teal">
+            Localization with low power wide area networks</a>
+          </i>
+        </div>
+      </div>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b>Nikita Jalodia<span class="w3-right">2021</span></b></header>
+        <div class="w3-container w3-padding">Waterford Institute of Technology, Ireland - PhD Confirmation Reviewer<br/>
+          <i class="w3-text-grey">
+            Deep Learning for Autonomic SLA Management of NFV Resources towards Next Generation Networks
+          </i>
+        </div>
+      </div>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b>Jan Bauwens<span class="w3-right">2021</span></b></header>
+        <div class="w3-container w3-padding">Ghent University, Belgium - Member<br/>
+          <i class="w3-text-grey"><a href="http://hdl.handle.net/1854/LU-8721239" target="_blank" class="w3-hover-text-teal">
+            Sustainable and interoperable MAC protocol design for heterogeneous internet of things systems</a>
+          </i>
+        </div>
+      </div>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b>Patrick Bosch<span class="w3-right">2021</span></b></header>
+        <div class="w3-container w3-padding">University of Antwerp, Belgium - Member<br/>
+          <i class="w3-text-grey"><a href="https://hdl.handle.net/10067/1778260151162165141" target="_blank" class="w3-hover-text-teal">
+            Adaptive management of Wi-Fi networks in dynamic and heterogeneous environments</a>
+          </i>
+        </div>
+      </div>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b>Amina Seferagic<span class="w3-right">2021</span></b></header>
+        <div class="w3-container w3-padding">Ghent University, Belgium - Member<br/>
+          <i class="w3-text-grey"><a href="http://hdl.handle.net/1854/LU-8697061" target="_blank" class="w3-hover-text-teal">
+            Scalable low-latency Wi-Fi for industrial internet of things</a>
+          </i>
+        </div>
+      </div>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b>Ruben Mennes<span class="w3-right">2021</span></b></header>
+        <div class="w3-container w3-padding">University of Antwerp, Belgium - Member<br/>
+          <i class="w3-text-grey"><a href="https://hdl.handle.net/10067/1751730151162165141" target="_blank" class="w3-hover-text-teal">
+            Sharing is caring: a machine-learning based management framework for efficient spectrum collaboration</a>
+          </i>
+        </div>
+      </div>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b>Hany Assasa<span class="w3-right">2019</span></b></header>
+        <div class="w3-container w3-padding">Universidad Carlos III de Madrid, Spain - Chair<br/>
+          <i class="w3-text-grey"><a href="https://dspace.networks.imdea.org/handle/20.500.12761/725" target="_blank" class="w3-hover-text-teal">
+            Robust and Reliable Millimeter Wave Wireless Networks</a>
+          </i>
+        </div>
+      </div>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b>Jeroen van der Hooft<span class="w3-right">2019</span></b></header>
+        <div class="w3-container w3-padding">Ghent University, Belgium - Member<br/>
+          <i class="w3-text-grey"><a href="https://biblio.ugent.be/publication/8616762" target="_blank" class="w3-hover-text-teal">
+            Low-Latency Delivery of Adaptive Video Streaming Services</a>
+          </i>
+        </div>
+      </div>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b>Stefano Petrangeli<span class="w3-right">2018</span></b></header>
+        <div class="w3-container w3-padding">Ghent University, Belgium - Member<br/>
+          <i class="w3-text-grey"><a href="https://biblio.ugent.be/publication/8553995" target="_blank" class="w3-hover-text-teal">
+            QoE-Centric Network-Assisted Delivery of Adaptive Video Streaming Services</a>
+          </i>
+        </div>
+      </div>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b>Bram Naudts<span class="w3-right">2017</span></b></header>
+        <div class="w3-container w3-padding">Ghent University, Belgium - Member<br/>
+          <i class="w3-text-grey"><a href="https://biblio.ugent.be/publication/8514599" target="_blank" class="w3-hover-text-teal">
+            Techno-Economic Analysis of Software-Defined Telecommunications Networks</a>
+          </i>
+        </div>
+      </div>
+
+      <div class="w3-card w3-margin">
+        <header class="w3-container w3-teal w3-padding"><b>Niels Bouten<span class="w3-right">2017</span></b></header>
+        <div class="w3-container w3-padding">Ghent University, Belgium - Member<br/>
+          <i class="w3-text-grey"><a href="https://biblio.ugent.be/publication/8119676" target="_blank" class="w3-hover-text-teal">
+            QoE management of HTTP adaptive streaming services</a>
+          </i>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-16">
+    <p>&copy; <script>document.write(new Date().getFullYear())</script>, Jeroen Famaey | Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-teal">w3.css</a></p>
+  </footer>
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("dropdown-menu");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  </script>
+
+</body>
 </html>

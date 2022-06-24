@@ -1,91 +1,94 @@
-<!DOCTYPE HTML>
-<!--
-	Miniport by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Jeroen Famaey</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" href="images/photo.jpg">
-		<script type="text/javascript" src="assets/js/bibtex_js.js"></script>
-	</head>
-	<body class="is-preload">
+<head>
+<title>Jeroen Famaey</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="icon" href="assets/images/photo.jpg">
+  <script type="text/javascript" src="assets/js/bibtex_js.js"></script>
+</head>
 
-		<!-- Nav -->
-		<nav id="nav">
-			<ul class="container">
-				<li><a href="index.html">About</a></li>
-				<li><a href="index.html#projects">Projects</a></li>
-				<li><a href="publications.html">Publications</a></li>
-			</ul>
-		</nav>
 
-		<bibtex src="bibtex_v20220502.bib"></bibtex>
 
-		<!-- Research Topics -->
-			<article id="publications" class="wrapper style3">
-				<div class="container">
-					<header>
-						<h1>Publications</h1>
-					</header>
-					<div style="text-align: left;" class="box style2">
-				  <div class="bibtex_structure">
-				    <div class="group year" extra="DESC number">
-				      <h2 class="title"></h2>
-							<span>[<a href="#publications">back to top</a>]</span>
-				      <div class="templates"></div>
-				    </div>
-				  </div>
-				  <div id="bibtex_display"></div>
-				  <div class="bibtex_template">
-				   <p>
-				     <span style="font-weight: bold;" class="title"></span>
-						 <span class="if !nofile">
-						 		<span><a class="bibtexVar" href="papers/+BIBTEXKEY+.pdf" target="_blank" extra="BIBTEXKEY"><i style="font-size: 175%; color: Tomato;" class="far fa-file-pdf"></i></a></span>
-					 	 </span>
-						 </br>
-				     <span class="author"></span></br>
-				     <span style="font-style: italic;">
-				       <span class="if journal">
-				         <span class="journal"></span>,
-				       </span>
-				       <span class="if booktitle">
-				         In <span class="booktitle"></span>,
-				       </span>
-				       <span class="year"></span>.
-				       <span class="if doi">
-				          [<a class="bibtexVar" href="http://dx.doi.org/+DOI+" target="_blank" extra="doi"><span class="doi"></span></a>]
-				       </span>
-				     </span>
-				   </p>
-				 </div>
-			 </div>
-			 <noscript>Your browser does not support JavaScript!</noscript>
-			</div>
-			</article>
+<body>
+  <a name="top"></a>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="index.html" class="w3-bar-item w3-button w3-hover-teal">JEROEN <b>FAMAEY</b></a>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right">
+        <a href="team.html" class="w3-bar-item w3-button w3-hide-medium w3-hide-small w3-hover-teal">TEAM</a>
+        <a href="publications.html" class="w3-bar-item w3-button w3-hide-medium w3-hide-small w3-hover-teal">PUBLICATIONS</a>
+        <a href="projects.html" class="w3-bar-item w3-button w3-hide-medium w3-hide-small w3-hover-teal">PROJECTS</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-teal" onclick="myFunction()">&#9776;</a>
+      </div>
+    </div>
+    <div id="dropdown-menu" class="w3-right w3-bar-block w3-white w3-padding w3-card w3-hide w3-hide-large">
+      <a href="team.html" class="w3-bar-item w3-button w3-hover-teal">TEAM</a>
+      <a href="publications.html" class="w3-bar-item w3-button w3-hover-teal">PUBLICATIONS</a>
+      <a href="projects.html" class="w3-bar-item w3-button w3-hover-teal">PROJECTS</a>
+    </div>
+  </div>
 
-		<!-- Contact -->
+  <!-- Load Bibtex file -->
+  <bibtex src="bibtex_v20220625.bib"></bibtex>
 
-			<article id="contact" class="wrapper style4">
-					<footer>
-						<ul id="copyright">
-							<li>&copy; Jeroen Famaey. All rights reserved. Design: <a href="https://html5up.net/" target="_blank">HTML5 UP</a>.</li>
-						</ul>
-					</footer>
-				</div>
-			</article>
+  <div style="margin-bottom: 2cm;"></div>
+  <div class="w3-content w3-padding" style="max-width:1000px">
+    <h1 class="w3-border-bottom w3-border-teal">Publications</h1>
+    <div class="bibtex_structure">
+      <div class="group year" extra="DESC number">
+        <h2 class="title"></h2>
+        <span>[<a href="#top">back to top</a>]</span>
+        <div class="templates"></div>
+      </div>
+    </div>
+    <div id="bibtex_display"></div>
+    <div class="w3-card w3-padding w3-margin-top w3-margin-bottom bibtex_template">
+     <p>
+       <span class="if doi">
+         <a class="bibtexVar" href="http://dx.doi.org/+DOI+" target="_blank" extra="doi"><span style="font-weight: bold;" class="title"></span></span></a>
+       </span>
+       <span class="if !doi">
+         <span style="font-weight: bold;" class="title"></span>
+       </span>
+       <span class="if !nofile">
+          <span><a class="bibtexVar" href="papers/+BIBTEXKEY+.pdf" target="_blank" extra="BIBTEXKEY"><i style="font-size: 175%; color: Tomato;" class="fa fa-file-pdf-o"></i></a></span>
+       </span>
+       </br>
+       <span class="author"></span></br>
+       <span style="font-style: italic;">
+         <span class="if journal">
+           <span class="journal"></span>,
+         </span>
+         <span class="if booktitle">
+           In <span class="booktitle"></span>,
+         </span>
+         <span class="year"></span>.
+       </span>
+     </p>
+    </div>
+  </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-16">
+    <p>&copy; <script>document.write(new Date().getFullYear())</script>, Jeroen Famaey | Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-teal">w3.css</a></p>
+  </footer>
 
-	</body>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("dropdown-menu");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  </script>
+
+</body>
 </html>
