@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jeroen Famaey - Publications</title>
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="assets/js/bibtex_js.js"></script>
+</head>
+
+
+
+<body>
+
+  <!-- Load Bibtex file -->
+  <bibtex src="bibtex_v20221006.bib"></bibtex>
+
+    <h1>Publications</h1>
+    <!--
+    <div class="bibtex_structure">
+      <div class="sections bibtextypekey">
+        <div class="section article">
+          <h2>Journal Articles</h2>
+          <div class="sort year" extra="DESC number">
+            <div class="templates"></div>
+          </div>
+        </div>
+        <div class="section inproceedings">
+          <h2>Conference and Workshop Papers</h2>
+          <div class="sort year" extra="DESC number">
+            <div class="templates"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    -->
+    <div id="bibtex_display"></div>
+    <div class="bibtex_template">
+    <ul>
+     <li>
+       <span class="author"></span>, &ldquo;<span class="title"></span>,&rdquo;
+       <span class="if journal">
+         <span  style="font-style: italic;" class="journal"></span>,
+         <span class="if volume">vol. <span class="volume"></span>,</span>
+         <span class="if number">issue <span class="number"></span>,</span>
+         <span class="if pages">pp. <span class="pages"></span>,</span>
+       </span>
+       <span class="if booktitle"> in <span style="font-style: italic;" class="booktitle"></span>,</span>
+       <span class="year"></span>.
+       <span class="if doi">
+         doi: <a class="bibtexVar" href="http://dx.doi.org/+DOI+" target="_blank" extra="doi"><span class="doi"></span></span></a>
+       </span>
+     </li>
+   </ul>
+   </div>
+
+</body>
+</html>
